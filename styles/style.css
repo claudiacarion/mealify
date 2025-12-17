@@ -39,6 +39,12 @@ button {
   font-size: 3rem;
 }
 
+.intro,
+.tagline {
+  margin: 0;
+  padding: 8px;
+}
+
 .main-container {
   flex-grow: 1;
   padding: 16px;
@@ -59,6 +65,12 @@ button {
 
 .btn-container {
   text-align: center;
+}
+
+#categoryList {
+  border-radius: 5px;
+  margin: 8px;
+  padding: 8px;
 }
 
 #food-image {
@@ -92,6 +104,6 @@ button {
 
   .card {
     flex-wrap: wrap;
-    flex: 0 1 30%;
+    flex: 0 1 70%;
   }
 }

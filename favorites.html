@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Night | Your Favorited Foods</title>
-    <script src="./scripts/favFood.js" defer></script>
+    <script src="./scripts/favorites.js" defer></script>
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/favFood.css" />
+    <link rel="stylesheet" href="./styles/favorites.css" />
     <link rel="stylesheet" href="./styles/typography.css" />
   </head>
   <body>
     <header class="header">
+      <h1 class="header__title">&#127859;Mealify&#127858;</h1>
+      <h4 class="intro">
+        Remember that really good dish? Yeah, you'll probably find it here.
+      </h4>
+      <h3 class="tagline">Stop wondering, start cooking.</h3>
+
       <nav class="navbar">
         <a href="./index.html">Home</a>
       </nav>
     </header>
     <main class="main-container">
-      <h3 class="title">Your Favorited Foods</h3>
       <ul id="fav-list"></ul>
-      <div class="card" id="food-card">
+      <div class="card hide" id="food-card">
         <img id="food-image" />
         <h3 class="card__title" id="food-card__title"></h3>
         <p class="info" id="food-origin"></p>

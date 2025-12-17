@@ -42,12 +42,12 @@ window.addEventListener("DOMContentLoaded", () => {
       favItem.className = "fav-food";
       favItem.textContent = meal.name;
       favList.appendChild(favItem);
-      console.log(meal.idMeal);
 
       const show = element => element.classList.remove("hide");
       const hide = element => element.classList.add("hide");
 
       favItem.onclick = () => {
+        hide(document.querySelector("#recipe"))
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
           .then(response => {
             if (!response.ok) {

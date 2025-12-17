@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Night</title>
+    <script src="./scripts/food.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/typography.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">&#127859;Mealify&#127858;</h1>
+      <h4 class="intro">
+        Can't decide what to cook? We got you. One click and you get a random meal, with all the ingredients and recipe listed for you.
+      </h4>
+      <h3 class="tagline">Stop wondering, start cooking.</h3>
+    </header>
+    <main class="main-container">
+    <div class="card" id="food-card">
+      <div id="btn-container">
+        <button class="button" id="food-btn">Find a random food!</button>
+      </div>
+      <div class="search-bar">
+        <select name="category" id="categoryList">
+          <option value="">Choose a category</option>
+        </select>
+      </div>
+      <img id="food-image" />
+      <h3 class="card__title" id="food-card__title"></h3>
+      <p class="info" id="food-origin"></p>
+      <button class="info hide" id="food__read-more-btn">Read more</button>
+      <button class="info hide" id="fav-btn">Add to favorites</button>
+      <div class="info hide" id="recipe"></div>
+    </div>
+  </body>
+</html>
